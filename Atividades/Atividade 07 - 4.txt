@@ -1,0 +1,22 @@
+var nome = "Renato Oliveira";
+var peso = 76.00;
+var altura = 1.78;
+
+mostraPaciente(nome, peso, altura);
+
+//mostraPaciente("Renato Oliveira", 76.00, 1.78);
+
+
+/* Atenção:
+
+Não esqueça de incluir a chamada para o arquivo "funcoes.js" no index.html,
+antes da chamada para o arquivo "controller.js"!
+
+<script src="js/funcoes.js"></script>
+<script src="js/controller.js"></script>
+
+*/
+
+
+
+ 

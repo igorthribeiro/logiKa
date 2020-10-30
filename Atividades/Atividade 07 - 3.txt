@@ -1,0 +1,19 @@
+function mostraPaciente( nomePaciente, pesoPaciente, alturaPaciente ) {
+    var imc = calculaIMC(pesoPaciente, alturaPaciente);
+    var situacao = verificaMC(imc);
+
+    var spanNome = document.getElementById("nome");     //<span id="nome"></span>
+    spanNome.innerHTML = nomePaciente;
+    
+    var spanPeso = document.getElementById("peso");     //<span id="peso"></span>
+    spanPeso.innerHTML = pesoPaciente;
+    
+    var spanAltura = document.getElementById("altura"); //<span id="altura"></span>
+    spanAltura.innerHTML = alturaPaciente;
+    
+    var spanImc = document.getElementById("imc");      //<span id="imc"></span>
+    spanImc.innerHTML = imc.toFixed(2);
+    
+    var spanSituacao = document.getElementById("situacao");      //<span id="situacao"></span>
+    spanSituacao.innerHTML = situacao;    
+}

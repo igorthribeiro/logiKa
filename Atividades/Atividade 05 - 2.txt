@@ -1,0 +1,16 @@
+var nome = "Renato Oliveira";
+var peso = 76.00;
+var altura = 1.78;
+var imc = peso / (altura**2);
+
+var spanNome = document.getElementById("nome");     //<span id="nome"></span>
+spanNome.innerHTML = nome;
+
+var spanPeso = document.getElementById("peso");     //<span id="peso"></span>
+spanPeso.innerHTML = peso;
+
+var spanAltura = document.getElementById("altura"); //<span id="altura"></span>
+spanAltura.innerHTML = altura;
+
+var spanImc = document.getElementById("imc");      //<span id="imc"></span>
+spanImc.innerHTML = imc.toFixed(2);

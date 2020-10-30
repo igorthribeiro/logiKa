@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Calculadora IMC</title>
+    </head>
+    <body>
+        <h2>Calculadora de IMC</h2>
+        <hr>
+        <p>
+            Nome: <span id="nome"></span>
+            <br/>
+            Peso: <span id="peso"></span>
+            <br/>
+            Altura: <span id="altura"></span>
+            <br/>
+            IMC: <span id="imc"></span>
+        </p>
+    </body>
+    <script src="js/controller.js"></script>
+</html>

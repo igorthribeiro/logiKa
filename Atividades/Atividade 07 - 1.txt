@@ -1,0 +1,11 @@
+/*
+   pare! => sem parametro, sem retorno
+   pare: mãos ao alto! => com parâmetro e sem retorno 
+   pare: qual o seu nome! => com parâmetro e com retorno
+   
+*/  
+
+function calculaIMC(peso, altura) {
+    var imc = peso / (altura**2);
+    return imc;
+}

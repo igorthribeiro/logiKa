@@ -1,0 +1,10 @@
+function gerarRelatorio ( pacientes ) {
+    var listaNumerada = document.getElementById("listaNumerada"); //<ol id="listaNumerada"></ol>
+    listaNumerada.innerHTML = ""; //limpa a lista
+
+    pacientes.forEach( ( paciente ) => {
+        var imc = calculaIMC( paciente.peso, paciente.altura );
+        var sit = verificaMC( imc );
+        listaNumerada.innerHTML += `<li> ${paciente.nome} - Situação: ${sit}</li>`;
+    });
+}

@@ -1,0 +1,11 @@
+<html>
+    <head>
+        <title>Calculadora IMC</title>
+    </head>
+    <body>
+        <h2>Calculadora de IMC</h2>
+        <hr>
+        <p>Verifique o console (F12)</p>
+    </body>
+    <script src="js/controller.js"></script>
+</html>

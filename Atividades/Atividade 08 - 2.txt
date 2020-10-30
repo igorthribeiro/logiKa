@@ -1,0 +1,13 @@
+function lePaciente() {
+    var inputNome = document.getElementById("txtNome"); //<input type="text" id="txtNome"....
+    var inputPeso = document.getElementById("numPeso"); //<input type="number" id="numPeso"....
+    var inputAltura = document.getElementById("numAltura"); //<input type="number" id="numAltura"....
+
+    var paciente = {
+        nome : inputNome.value,
+        peso : inputPeso.value,
+        altura : inputAltura.value
+    }
+
+    return paciente;
+}
