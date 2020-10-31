@@ -1,6 +1,6 @@
 function mostraPaciente( nomePaciente, pesoPaciente, alturaPaciente ) {
     var imc = calculaIMC(pesoPaciente, alturaPaciente);
-    var situacao = verificaMC(imc);
+    var situacao = verificaIMC(imc);
 
     var spanNome = document.getElementById("nome");     //<span id="nome"></span>
     spanNome.innerHTML = nomePaciente;

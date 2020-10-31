@@ -3,7 +3,7 @@ function calculaIMC(peso, altura) {
     return imc;
 }
 
-function verificaMC ( imc ) {
+function verificaIMC ( imc ) {
     var situacao = null; //vazio
 
     if (imc < 18.5) {
@@ -21,7 +21,7 @@ function verificaMC ( imc ) {
 
 function mostraPaciente( paciente ) {
     var imc = calculaIMC( paciente.peso, paciente.altura );
-    var situacao = verificaMC(imc);
+    var situacao = verificaIMC(imc);
 
     var spanNome = document.getElementById("nome");     //<span id="nome"></span>
     spanNome.innerHTML = paciente.nome;
@@ -59,7 +59,7 @@ function gerarRelatorio ( pacientes ) {
 
     pacientes.forEach( ( paciente ) => {
         var imc = calculaIMC( paciente.peso, paciente.altura );
-        var sit = verificaMC( imc );
+        var sit = verificaIMC( imc );
         listaNumerada.innerHTML += `<li> ${paciente.nome} - Situação: ${sit}</li>`;
     });
 }

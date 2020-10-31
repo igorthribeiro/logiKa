@@ -1,4 +1,4 @@
-function verificaMC ( imc ) {
+function verificaIMC ( imc ) {
     var situacao = null; //vazio
 
     if (imc < 18.5) {

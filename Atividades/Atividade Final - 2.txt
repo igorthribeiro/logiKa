@@ -4,7 +4,7 @@ function gerarRelatorio ( pacientes ) {
 
     pacientes.forEach( ( paciente ) => {
         var imc = calculaIMC( paciente.peso, paciente.altura );
-        var sit = verificaMC( imc );
+        var sit = verificaIMC( imc );
         listaNumerada.innerHTML += `<li> ${paciente.nome} - Situação: ${sit}</li>`;
     });
 }
